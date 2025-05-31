@@ -1,0 +1,19 @@
+{
+  "Version": 3,
+  "ListAllProjects": true,
+  "MultiProjectConfigurations": {
+    "0.Main-Flow": {
+      "Projects": {
+        "ProductService.ApiGateway": {},
+        "ProductService.Api": {},
+      }
+    },
+    "2.Archiving-Flow": {
+      "Projects": {
+		  "Auvenir.FileIntegrityCheckProcessor": {},
+        "Auvenir.Archiving.WebAPI": {},
+        "Archiving.Processor": {}
+      }
+    }
+  }
+}
