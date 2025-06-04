@@ -16,6 +16,7 @@ using ProductService.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();//add controllers
 // Add services to the container.
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure(builder.Configuration);
@@ -105,8 +106,11 @@ app.UseExceptionHandler(errorApp =>
     });
 });
 
+app.UseRouting();
+app.MapControllers();
+
 // Endpoint minimalApi
-app.MapProductEndpoints();
+//app.MapProductEndpoints();
 
 
 app.Run();
