@@ -5,7 +5,7 @@ namespace ProductService.Infrastructure.Data
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<Product> Products { get; set; }
+        public DbSet<Product> Products { get; set; } = null!;
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
